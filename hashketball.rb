@@ -192,9 +192,13 @@ def big_shoe_rebounds
       if element[:shoe] > biggest_shoe
         biggest_shoe = element[:shoe]
       end 
-      
     end
-    binding.pry
+    value[:players].each do |element|
+      if element[:shoe] == biggest_shoe
+        return element[:rebounds]
+      end
+    end
+    
   end
 end 
 
