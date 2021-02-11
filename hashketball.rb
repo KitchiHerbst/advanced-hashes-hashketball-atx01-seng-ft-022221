@@ -180,12 +180,7 @@ def player_stats(player_name)
   game_hash.each do |key, value|
     value[:players].each do |element|
       if player_name == element[:player_name]
-        
-        
-        
-        
-        
-        binding.pry
+        return element
       end
     end
   end
