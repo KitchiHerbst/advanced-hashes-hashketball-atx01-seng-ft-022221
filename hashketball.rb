@@ -167,7 +167,6 @@ def player_numbers(team_name)
   game_hash.each do |key, value|
     if value[:team_name] == team_name
       value[:players].each do |element|
-        #binding.pry
         jersey_numbers << element[:number]
       end
     end
@@ -198,7 +197,6 @@ def big_shoe_rebounds
         return element[:rebounds]
       end
     end
-    
   end
 end 
 
