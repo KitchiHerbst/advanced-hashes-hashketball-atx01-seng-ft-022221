@@ -176,7 +176,6 @@ def player_numbers(team_name)
 end
 
 def player_stats(player_name)
-  stats = {}
   game_hash.each do |key, value|
     value[:players].each do |element|
       if player_name == element[:player_name]
@@ -185,4 +184,16 @@ def player_stats(player_name)
     end
   end
 end
+
+def big_shoe_rebounds
+  game_hash.each do |key, value|
+    binding.pry
+  end
+end 
+
+
+
+
+
+
 
