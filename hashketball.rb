@@ -189,8 +189,10 @@ def big_shoe_rebounds
   biggest_shoe = 1 
   game_hash.each do |key, value|
     value[:players].each do |element|
-      if element[:shoe] > 
-      binding.pry 
+      if element[:shoe] > biggest_shoe
+        biggest_shoe = element[:shoe]
+      end 
+      if biggest_shoe == element[]
     end
     binding.pry
   end
